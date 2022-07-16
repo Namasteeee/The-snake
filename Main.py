@@ -1,5 +1,3 @@
-import tkinter as tk
-import time
 class Snake:
     
     def __init__(self):
@@ -9,17 +7,14 @@ class Snake:
         self.length = self.length * 2
 
 
-
-
-    def snake_fill(self, n): #TODO: can we put it the class?
+    def snake_fill(self, n): 
         size_of_grid = int(n) ** 2
-        
         counter=0
 
         while True:
             if self.length <= size_of_grid:
-                self.update_length()           
-
+                self.update_length()      
+                  
             else:
                 print(f'The number of times before we run out of space is {counter - 1 }')
                 break
@@ -27,8 +22,10 @@ class Snake:
             counter+=1
 
 
+
+
+
 if __name__=='__main__':
-    n = input ('Please enter n where the grid is n x n: ')
+    n = input ('Please enter n, where the grid is n x n : ')
     snake=Snake()
     snake.snake_fill(n)
-
