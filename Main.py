@@ -20,11 +20,6 @@ class Snake:
                 break
 
             counter+=1
-
-
-
-
-
 if __name__=='__main__':
     n = input ('Please enter n, where the grid is n x n : ')
     snake=Snake()
