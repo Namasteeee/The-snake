@@ -11,3 +11,4 @@ It was eaiser that i thought, it took minutes to solve.
 Maybe to animate the snake movement using tkinter?
 
 
+
